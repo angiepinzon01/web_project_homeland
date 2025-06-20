@@ -1,0 +1,9 @@
+.footer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer__text {
+  font-size: 14px;
+  line-height: 16px;
+}
