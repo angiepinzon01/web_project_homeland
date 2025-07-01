@@ -3,18 +3,19 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  margin: 0 auto;
+  margin: 0 auto 76px;
 }
-.place {
+.place__container {
+  max-width: 984px;
   display: grid;
   grid-template-columns: 460px 484px;
-  grid-template-rows: auto 406px auto;
+  grid-template-rows: auto 460px auto;
   grid-template-areas:
     "title website"
     "image paragraphs"
     "button paragraphs";
-  font-family: "Inter";
-  gap: 10px;
+  font-family: "Inter-Regular", sans-serif;
+  grid-gap: 48px 40px;
 }
 
 .place__button {
@@ -32,10 +33,34 @@
   flex-direction: column;
   justify-content: end;
 }
+.place__website-title {
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 12%;
+  text-transform: uppercase;
+}
+.place__website-content {
+  font-family: "Inter-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.place__image {
+  grid-area: image;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 48px;
+  box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+.place__image:hover {
+  opacity: 0.5;
+}
 .place__title {
   grid-area: title;
   max-width: 460px;
-  font-family: "Inter-Bold", sans-serif;
+  font-family: "Inter-Black", sans-serif;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
