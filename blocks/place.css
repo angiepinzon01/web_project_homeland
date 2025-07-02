@@ -1,4 +1,5 @@
 .place__container {
+  width: 100%;
   max-width: 984px;
   display: grid;
   grid-template-columns: 460px 484px;
@@ -8,7 +9,8 @@
     "image paragraphs"
     "button paragraphs";
   font-family: "Inter-Regular", sans-serif;
-  grid-gap: 48px 40px;
+  gap: 48px 40px;
+  margin: 0 auto;
 }
 
 .place__button {
@@ -28,7 +30,6 @@
   font-size: 18px;
   line-height: 100%;
   font-weight: 600;
-  text-decoration: none;
 }
 .place__website {
   grid-area: website;
@@ -58,6 +59,7 @@
   height: 100%;
   margin-bottom: 48px;
   box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.5);
+  object-fit: cover;
 }
 .place__image:hover {
   opacity: 0.5;
@@ -145,10 +147,13 @@
     margin: 0;
   }
   .place__button {
+    display: block;
     width: 288px;
     padding: 13px 20px;
     font-size: 14px;
     font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1279px) and (min-width: 768px) {
@@ -166,5 +171,13 @@
     line-height: 46px;
 
     margin: 0 0 20px 0;
+  }
+  .place__button {
+    width: 280px; /* un poco más estrecho para acomodar el grid más compacto */
+    padding: 12px 20px; /* ligero ajuste si lo deseas */
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
   }
 }
