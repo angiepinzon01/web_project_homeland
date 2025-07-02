@@ -91,3 +91,96 @@
   color: inherit;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .places {
+    width: 100%;
+
+    margin-top: 62px;
+  }
+  .place__container {
+    display: grid;
+    width: 320px;
+    grid-template-columns: 320px;
+    grid-template-rows: auto auto 320px auto auto auto;
+    margin: auto;
+    padding-bottom: 50px;
+    grid-template-areas:
+      "title"
+      "website"
+      "image"
+      "paragraphs"
+      "paragraphs"
+      "button";
+  }
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+    width: 288px;
+    margin: 0 0 20px 0;
+  }
+
+  .place__image {
+    width: 320px;
+    height: 320px;
+    margin-bottom: 30px;
+  }
+  .place__website {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .place__website-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #aaaaaa;
+    margin-bottom: 8px;
+  }
+  .place__website-content {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .place__paragraphs {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .place__paragraph {
+    margin: 0;
+  }
+  .place__button {
+    width: 288px;
+    padding: 13px 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .places {
+    margin-top: 64px;
+  }
+
+  .place__container {
+    width: 720px;
+    align-items: start;
+    grid-template-columns: 340px 352px;
+    grid-template-rows: auto 340px auto;
+    margin: auto;
+    padding-bottom: 80px;
+    gap: 28px;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 46px;
+
+    margin: 0 0 20px 0;
+  }
+}
