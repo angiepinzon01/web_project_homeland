@@ -19,6 +19,12 @@ El archivo pages/index.css define la apariencia del sitio, incluyendo:
 • Tipografía limpia
 • Alineación de texto e imágenes
 • Estilo personalizado para secciones como .header, .main, .footer
+
+## 🚀 Proyecto desplegado
+
+Puedes ver el proyecto en funcionamiento en GitHub Pages haciendo clic en el siguiente enlace:
+
+🔗 [Ver proyecto en línea](https://angiepinzon01.github.io/web_project_homeland/)
 Autor
 https://github.com/angiepinzon01/web_project_homeland.git
 Angie Pinzon
